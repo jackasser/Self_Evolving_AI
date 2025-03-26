@@ -1,0 +1,155 @@
+{
+  "assistant": {
+    "name": "Autonomous AI System",
+    "version": "1.0.0",
+    "description": "AI system that autonomously learns, achieves goals, and extends itself"
+  },
+  "safety": {
+    "content_filtering": {
+      "enabled": true,
+      "harmful_content_threshold": 0.7,
+      "bias_mitigation": true
+    },
+    "action_constraints": {
+      "require_confirmation": true,
+      "restricted_actions": [
+        "system_modification",
+        "unrestricted_network_access",
+        "autonomous_resource_acquisition"
+      ],
+      "logging": {
+        "enabled": true,
+        "log_level": "INFO",
+        "include_reasoning": true
+      }
+    },
+    "self_improvement": {
+      "allowed": true,
+      "scope": "bounded",
+      "requires_review": true,
+      "improvement_areas": [
+        "knowledge_base",
+        "response_quality",
+        "reasoning_process"
+      ]
+    }
+  },
+  "capabilities": {
+    "reasoning": {
+      "enabled": true,
+      "depth": "medium",
+      "transparency": true
+    },
+    "planning": {
+      "enabled": true,
+      "max_steps": 10,
+      "requires_oversight": true
+    },
+    "learning": {
+      "enabled": true,
+      "scope": "session",
+      "persistence": true,
+      "learning_rate": 0.1,
+      "knowledge_persistence_path": "knowledge_base.json"
+    }
+  },
+  "evolution": {
+    "auto_evolution": {
+      "enabled": true,
+      "interval_hours": 1,
+      "max_daily_cycles": 24
+    },
+    "goal_setting": {
+      "max_active_goals": 10,
+      "default_priority": 3
+    },
+    "optimization": {
+      "max_concurrent_optimizations": 5,
+      "min_expected_improvement": 0.1
+    },
+    "feedback": {
+      "evaluation_threshold": 0.7,
+      "adjustment_rate": 0.05
+    }
+  },
+  "resource_management": {
+    "memory_thresholds": {
+      "warning": 70,
+      "critical": 90
+    },
+    "cpu_thresholds": {
+      "warning": 60,
+      "critical": 85
+    },
+    "storage_thresholds": {
+      "warning": 75,
+      "critical": 90
+    },
+    "component_priorities": {
+      "safety_filter": 10,
+      "assistant": 9,
+      "self_preservation": 8,
+      "goal_manager": 6,
+      "feedback_system": 5,
+      "resource_manager": 4,
+      "process_optimizer": 3
+    }
+  },
+  "web_search": {
+    "enabled": true,
+    "use_duckduckgo": true,
+    "use_wikipedia": true,
+    "max_requests_per_minute": 10,
+    "max_requests_per_hour": 100,
+    "max_requests_per_day": 500,
+    "trusted_domains": [
+      "wikipedia.org",
+      "github.com",
+      "arxiv.org",
+      "scholar.google.com",
+      "nature.com",
+      "science.org",
+      "research.gov",
+      "education.gov",
+      "stackoverflow.com",
+      "docs.python.org",
+      "medium.com",
+      "kaggle.com"
+    ]
+  },
+  "autonomous_learning": {
+    "use_local_llm": false,
+    "llm_model_path": "models/ggml-model-q4_0.bin",
+    "llm_context_length": 2048,
+    "llm_threads": 4
+  },
+  "thinking": {
+    "use_local_llm": false,
+    "llm_model_path": "models/ggml-model-q4_0.bin",
+    "llm_context_length": 2048,
+    "llm_threads": 4
+  },
+  "goals": {
+    "data_file": "goals_data.json",
+    "min_active_goals": 3,
+    "review_interval_hours": 1
+  },
+  "self_preservation": {
+    "health_check_interval_seconds": 30,
+    "state_save_interval_seconds": 300,
+    "backup_retention_count": 10,
+    "error_thresholds": {
+      "consecutive_failures": 3,
+      "errors_per_minute": 5
+    },
+    "recovery_strategies": [
+      "component_restart",
+      "system_reset",
+      "state_restore",
+      "resource_release"
+    ]
+  },
+  "autonomous_mode": true,
+  "autonomous_interval_seconds": 300,
+  "state_save_interval_seconds": 600
+}
